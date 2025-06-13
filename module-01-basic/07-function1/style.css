@@ -1,0 +1,13 @@
+@charset "UTF-8"
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+div.content{
+    width:800px;
+    height: auto;
+    border: 2px dashed ;
+    margin: 20px;
+    padding: 20px;
+}

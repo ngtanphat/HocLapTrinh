@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #F6F7F9;
+    font-size: 18px;
+}
+
+.main {
+    background-color: #23272F;
+}
+
+.child {
+    width: 900px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.p-1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+span {
+    color: #149ECA;
+}
+
+.read-more {
+    color: #149ECA;
+    text-decoration: none;
+}
+
+.dmy {
+    color: #99A1B3;
+}
+
+.border-1 {
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+.border-1 > * {
+    margin-bottom: 16px;
+}
+
+.border-1 > :last-child {
+    margin-bottom: 0;
+}
+
+/* .border-1 > *:not(:last-child) {
+    margin-bottom: 16px;
+} */
+
+/* .border-1 > a,
+.border-1 > span {
+    margin-bottom: 16px;
+} */
+
+/* css cho tất cả phàn tử con trực tiếp của border-1 sẽ có margin-bottom: 16px*/

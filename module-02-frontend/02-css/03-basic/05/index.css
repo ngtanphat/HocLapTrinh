@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    padding: 18px;
+}
+
+.buttonContactMe {
+    border: 2px solid rgba(29, 29, 36, 0.5);
+    border-radius: 6px;
+    /* padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 27px;
+    padding-right: 27px; */
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 17px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* SECTION PROFILE */
+.profile {
+    background-color: #f8f9fa;
+    display: block;
+    padding: 150px 15px;
+    font-size: 0px;
+}
+
+/* .profile .profile-pic,
+.profile .profile-inf {
+    margin: 0 17px;
+} */
+
+.profile > * {
+    margin: 0 17px;
+}
+
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 14px solid rgba(255, 255, 255, 1);
+}
+
+.profile-inf {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.profile-inf>* {
+    font-size: 58px;
+    font-family: 'Montserrat';
+    color: rgba(31, 31, 37, 1);
+
+}
+
+.welcome {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.highlight {
+    color: rgba(249, 0, 77, 1);
+}
+
+/* PROJECT */
+.myproject {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    font-family: 'Montserrat';
+    font-size: 50px;
+}
+.project-grid {
+    background-color: white;
+}
+.project-card {
+    display: inline-block;
+    width: 30%;
+    margin: 0 17px;
+    margin-bottom: 60px;
+}
+.project-card img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+.project-category{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(29, 29, 36, 1);
+    margin-top: 26px;
+}
+.project-name{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(29, 29, 36, 1);
+    padding-top: 2px;
+
+}
+
+/* FOOTER*/
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 31px 0;
+}

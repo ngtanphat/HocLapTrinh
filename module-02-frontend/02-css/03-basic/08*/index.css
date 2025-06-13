@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dropdown {
+    float: left;
+}
+  
+.dropdown .dropbtn {
+border: none;
+color: black;
+}
+
+.dropdown:hover .dropbtn {
+background-color: red;
+}
+
+.dropdown-content {
+display: none;
+}
+
+.dropdown-content a {
+padding: 10px 20px;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}

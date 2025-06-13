@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 1200px;
+    margin: auto;
+    background-color: #FED049;
+    color: #FFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0;
+}
+
+/* 
+1. đưa các item nằm lên cùng 1 hàng -> inline-block
+2. điều chỉnh kích thước để mỗi item chiếm 1/4 (25%) so với phần tử cha
+3. các item ở vị trí chẵn lẻ sẽ có màu săcs khác nhau
+4. padding, color, dòng đầu tiên cần thụt đầu dòng (indent) vào là 30px;
+5. điều chỉnh khoảng cách giữa các item cho giống design
+
+*/
+
+/* 
+chia layout sử dụng display: inline-block
+- mặc định các phàn tử inline-block sẽ có khoảng cách với nhau (do ký tự space tạo ra)
+- giải quyết: set font-size cho phần tử cha về 0, set font-size của phần tử đang sử dụng inline-block về giá trị mình muốn
+- sử dụng margin để tạo khoảng cách giữa các cột -> layout bị vỡ
+.container: 1000px
+.item: 25%, margin: 15px (tổng trái phải 30px) -> chiếm 250px + 30px = 280px
+dẫn đến chỉ có 3 cột nằm trên 1 hàng, cột thứ 4 sẽ bị rớt xuống
+- giải quyết: set width phải trừ bớt đi phần khoảng cách đã dùng cho margin -> width: calc(25% - 30px)
+- căn chỉnh các phần tử inline-block với nhau -> sử dụng vertical-align: (top, bottom, middle)
+
+- xử lý css xen kẽ cho các phần tử ở vị trí chẵn/lẻ -> nth-child(odd/even)
+*/
+
+.item {
+    line-height: 23px;
+    border: 1px solid;
+    display: inline-block;
+    text-indent: 30px;
+    font-size: 20px;
+    width: calc(25% - 30px);
+    margin: 15px;
+    vertical-align: middle;
+    padding:20px;
+}
+
+.item:nth-child(odd) {
+    background-color: #007580;
+}
+
+.item:nth-child(even) {
+    background-color: #282846;
+}

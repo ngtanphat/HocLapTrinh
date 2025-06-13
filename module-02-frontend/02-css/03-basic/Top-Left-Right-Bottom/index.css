@@ -1,0 +1,114 @@
+:root {
+    --width-box1: 120px;
+    --height-box1: 50px;
+    --width-box2: 50px;
+    --height-box2: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-green {
+    width: var(--width-box1);
+    height: var(--height-box1);
+    border: 2px solid;
+    background-color: green;
+    text-align: center;
+    line-height: 50px;
+}
+
+.box-red {
+    width: var(--width-box2);
+    height: var(--height-box2);
+    border: 2px solid;
+    background-color: red;
+    text-align: center;
+    line-height: 12.5px;
+}
+
+.TL {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.TC {
+    position: fixed;
+    left: 50%;
+    /* margin-left: calc(-1 * var(--width-box1) / 2); */
+    transform: translateX(-50%);
+}
+
+.TR {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.RC {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.BL {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.BC {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.BR {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.LC {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+.CC {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* transform: translateX(-50%) translateY(-50%); */
+    transform: translate(-50%, -50%);
+}
+
+.CTL {
+    position: absolute;
+    top: -25px;
+    left: -50px;
+}
+
+.CTR {
+    position: absolute;
+    top: -25px;
+    right: -50px;
+}
+
+.CBR {
+    position: absolute;
+    bottom: -25px;
+    right: -50px;
+}
+
+.CBL {
+    position: absolute;
+    bottom: -25px;
+    left: -50px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h3>ĐĂNG KÝ THAM GIA</h3>
+            <p>Sau khi nhận được thông tin đăng ký, ZendVN sẽ liên hệ lại với bạn để có buổi tư vấn lộ trình học phù hợp với bạn nhất tại văn phòng ZendVN (Số 01, Khối A1, Tòa nhà Đạt Gia, 43 Đường Cây Keo, Tam Phú, Thủ Đức, Hồ Chí Minh)</p>
+        </div>
+        <form>
+            <div>
+                <label for="fullname">Họ và tên của bạn</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Họ tên">
+            </div>
+            <div>
+                <label for="number">Số điện thoại di động của bạn</label>
+                <input type="text" name="number" id="number" placeholder="Số điện thoại">
+            </div>
+            <div>
+                <label for="fb">Địa chỉ facebook của bạn</label>
+                <input type="text" name="facebook" id="fb" placeholder="Facebook">
+            </div>
+            <div>
+                <label for="Add">Địa chỉ email của bạn</label>
+                <input type="text" name="Email" id="Add" placeholder="Địa chỉ email">
+            </div>
+            <div>
+                <label for="why">Vì sao bạn muốn tham gia chương trình này?</label>
+                <textarea name="RW" id="why"></textarea>
+            </div>
+            <div>
+                <label for="brain">Kiến thức hiện tại của bạn?</label>
+                <textarea name="br" id="brain"></textarea>
+            </div>
+            <h5>Học phí: 28.000.000đ</h5>
+            <div>
+                <h5>Đối tượng ưu đãi học phí</h5>
+                <div>
+                    <input type="checkbox" name="box[]" id="b1" checked value="object1">
+                    <label for="b1">Giảm thêm 500.000đ cho các bạn học sinh, sinh viên, học viên cũ</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="box[]" id="b2" checked value="object2">
+                    <label for="b2">Giảm thêm 1.000.000đ cho các bạn đăng ký nhóm 2 người trở lên</label>
+                </div>
+            </div>
+            <div>
+                <h5>Hình thức thanh toán học phí</h5>
+                <div>
+                    <input type="radio" name="ra" id="r1" value="1">
+                    <label for="r1">Thanh toán 1 lần: 25.000.000đ</label>
+                </div>
+                <div>
+                    <input type="radio" name="ra" id="r2" checked value="2">
+                    <label for="r2">Thanh toán 2 lần: mỗi lần 13.000.000đ</label>
+                </div>
+                <div>
+                    <input type="radio" name="ra" id="r3">
+                    <label for="r3">Thanh toán 3 lần: mỗi lần 9.000.000đ</label>
+                </div>
+                <div>
+                    <input type="radio" name="ra" id="r4">
+                    <label for="r4">Thanh toán theo từng tháng: mỗi tháng 5.600.000đ</label>
+                </div>
+            </div>
+            <select>
+                <option value="1">Thanh toán 1 lần: 25.000.000đ</option>
+                <option value="2">Thanh toán 2 lần: 13.000.000đ</option>
+                <option value="2" selected>Thanh toán 3 lần: 9.000.000đ</option>
+            </select>
+            <select multiple>
+                <option value="1">Giảm thêm 500.000đ cho các bạn học sinh, sinh viên, học viên cũ</option>
+                <option value="2">Giảm thêm 1.000.000đ cho các bạn đăng ký nhóm 2 người trở lên</option>
+                <option value="3">xx</option>
+                <option value="4">yy</option>
+            </select>
+            <button>Gửi đăng ký</button>
+        </form>
+    </section>
+</body>
+
+</html>

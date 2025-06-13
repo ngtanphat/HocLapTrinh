@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Mulish;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 1);
+    width: 625px;
+    margin: 50px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.form-header {
+    background-color: rgba(32, 34, 94, 1);
+    width: 625px;
+    color: white;
+    padding: 101px 210px 70px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+form {
+    padding: 65px 117px 70px 117px;
+}
+
+.input-group {
+    margin-bottom: 40px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    border: none;
+    color: rgba(21, 23, 73, 1);
+    border-bottom: 2px solid rgba(211, 213, 241, 1);
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-size: 18px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.submit-btn {
+    padding: 27px 92px;
+    border-radius: 38.5px;
+    background-color: rgba(32, 34, 94, 1);
+    color: white;
+    border: 2px solid rgba(32, 34, 94, 1);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;/* thay đổi chuột khi để vào */
+    transition: 1s;/* thời gian thay đổi xuống hover */
+}
+
+/* thay đổi trạng thái*/
+.submit-btn:hover {
+    background-color: white;
+    color: rgba(32, 34, 94, 1);
+}

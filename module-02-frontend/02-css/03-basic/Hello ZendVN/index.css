@@ -1,0 +1,72 @@
+:root {
+    --width-box-inside: 180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    background-color: purple;
+
+    text-align: center;
+    line-height: 200px;
+
+    margin: 100px auto;
+    position: relative;
+}
+
+/* .box2 {
+    width: var(--width-box-inside);
+    height: var(--width-box-inside);
+    border: 2px solid;
+    background-color: yellow;
+
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -10;
+}
+
+.box3 {
+    width: var(--width-box-inside);
+    height: var(--width-box-inside);
+    border: 2px solid;
+    background-color: green;
+
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -10;
+} */
+
+.box1::before {
+    content: "";
+    width: var(--width-box-inside);
+    height: var(--width-box-inside);
+    border: 2px solid;
+    background-color: yellow;
+
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -10;
+}
+.box1::after {
+    content: "";
+    width: var(--width-box-inside);
+    height: var(--width-box-inside);
+    border: 2px solid;
+    background-color: green;
+
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -10;
+}
