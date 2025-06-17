@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D8DAE2;
+}
+
+.main{
+    padding :216px 18px;
+}
+.circle{
+    
+}
+
+.container{
+    background-color: #EFF0F1;
+    box-sizing: border-box;
+    border-radius: 26px;
+}
+
+.card-title{
+    padding: 56px 62px;
+}
+
+.card-content{
+    padding: 62px;
+    padding-top:0px;
+}
+
+.card-grid{
+    display:flex;
+    width: calc(100% / 3);
+}
