@@ -1,0 +1,15 @@
+1. PHP là gì? : 
+    PHP (Hypertext Preprocessor) là một ngôn ngữ lậo trình mã nguồn mở được thực thi trên máy chủ.
+2. Tập tin PHP có phần mở rộng là gì?
+    Một tập tin PHP có phần mở rộng *.php nó có thể chứa các văn bảng, mã nguồn HTML,CSS,JavaScript,Jquery,... và mã PHP
+3. PHP có gì khác so với HTML?
+    -HTML(trang web tĩnh): Users xem 1 trang web thì yêu cầu đó được gửi về server, server gửi nội dung trang web mà người dùng muốn xem về trình duyệt web cho users
+    -PHP(trang web động): khi có yêu cầu xem trang web thì server sẽ tiến hành phát sinh trang web đó từ PHP sang HTML và chuyển về trình duyệt web cho users vì trình duyệt web chỉ đọc được mã nguồn HTML.
+4. Server làm gì đối với trang web php?
+    -Server chỉ quan tâm đến mã nguồn PHP, nó sẽ chuyển mã nguồn PHP sang HTML rồi gửi lại cho người dùng.
+    -Trang web PHP được server phát sinh chỉ được gửi đến một client duy nhất.
+    -Server PHP phải mạnh hơn nhiều so với 1 server HTML thông thường.
+5. Tại sao nên sử dụng PHP để lập trình web?
+    -Chức năng: tạo ra những website động, thao tác với file trên server, nhận và gửi cookie, cập nhật database, hạn chế người dùng truy cập vào website, mã hoá dữ liệu,...
+    -Ưu điểm: thực thi tốt trên các hệ điều hành, các máy chủ phổ biến hiện nay, kết hợp dễ dàng với các hệ quản trị csdl, tài liệu phongphú và đadạng, miễn phí.
+    
