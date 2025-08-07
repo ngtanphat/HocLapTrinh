@@ -9,11 +9,10 @@ body{
 }
 
 .main{
-    display: flex;
-    width: 975px;
-    margin: 50px auto; /*tạm thời để dễ nhìn*/
-    border-radius: 25px;
+    display: block;
+    margin: 50px;
     background-color: #252B42;
+    border-radius: 25px;
     padding:35px;
 }
 
@@ -25,13 +24,16 @@ body{
     background-color: #1A2036;
 }
 
-.list{
+.icon-list{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    row-gap:15px;
 }
 
 .menu-right{
-    margin-left: 40px;
-    padding-top: 35px;
+
+}
+
+h2{
+    color: #B1B9D8;
 }
