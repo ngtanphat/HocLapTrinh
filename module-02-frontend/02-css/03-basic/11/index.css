@@ -6,6 +6,7 @@
 
 body{
     background-color: #D8DAE2;
+    padding: 216px 0px;
 }
 
 .main{
@@ -21,9 +22,31 @@ body{
     border: none;
     border-radius: 26px;
     background-color: #EFF0F1;
-    margin: 216px 18px;
+    position: relative;
 }
 
+.circle-top{
+    background-color: #E5E7F0;
+    position: absolute;
+    width: 310px;
+    height: 294px;
+    border-radius: 50%;
+    z-index: -1;
+    top: 0px;
+    left: 850px;
+    transform: translateY(-50%);
+}
+.circle-bottom{
+    background-color: #E5E7F0;
+    position: absolute;
+    width: 433px;
+    height: 410px;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 0px;
+    left: 350px;
+    transform: translateY(35%);
+}
 .card-title{
     display: block;
     padding: 62px 62px;
@@ -58,12 +81,12 @@ h2{
 }
 .card-grid-box{
     display:block;
-    width: 437px;
+    width: calc(100%/3);
     background-color: #FFFFFF;
     border-radius: 32px;
+    padding: 24px;
 }
 .card-grid-box-head{
-    margin: 24px;
     margin-bottom: 16px;
 }
 .card-grid-box-head img{
@@ -71,6 +94,7 @@ h2{
     width: 100%;
     border-radius: 24px;
     aspect-ratio: 389/268;
+    object-fit: cover;
 }
 
 .card-grid-box-body{
@@ -80,13 +104,20 @@ h2{
     gap:16px;
 }
 .card-grid-box-body img{
-    width: calc(80%/3);
+    width: 100%;
     border-radius: 24px;
     aspect-ratio: 119/97;
+    object-fit: cover;
 }
 
 .card-grid-box-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-grid-box-footer .right{
+    display:flex;
+    gap:1.67px;
+    padding-left: 16px;
 }
