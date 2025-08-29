@@ -6,8 +6,12 @@
 body{
     background-color: #F4F4F4;
     font-family: "Hind", sans-serif;
+    
 }
 .header{
+    /* display: block; */
+    margin:auto;
+    align-items: center;
     background-color: #FFFFFF;
     margin-bottom: 72px;
 }
@@ -20,7 +24,6 @@ body{
 }
 .newsblog{
     display: flex;
-    /* align-items:center; */
     font-weight: 600;
 }
 .newsblog #icon{
@@ -56,6 +59,7 @@ body{
     flex-wrap: wrap;
     gap:30px;
     width: 1320px;
+    margin:auto;
 }
 
 .category .button{
@@ -65,4 +69,24 @@ body{
     border: 0px solid ;
     border-radius: 15px;
     width: calc(100% / 4);
+    margin-bottom: 72px;
+}
+
+.body-1{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.body-1 .left p{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-1 .right img{
+    
+    display:block;
+    width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 410/510;
+    object-fit: cover;
 }
