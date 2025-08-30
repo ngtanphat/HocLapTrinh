@@ -9,18 +9,17 @@ body{
     
 }
 .header{
-    /* display: block; */
-    margin:auto;
-    align-items: center;
     background-color: #FFFFFF;
     margin-bottom: 72px;
+    padding: 22px 343px;
 }
 .header .inside{
     font-size: 28px;
+    width: 1320px;
+    margin:auto;
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding: 22px 343px;
 }
 .newsblog{
     display: flex;
@@ -73,11 +72,34 @@ body{
 }
 
 .body-1{
+    width: 1320px;
     display: flex;
+    margin: auto;
     /* flex-wrap: wrap; */
 }
 
+.body-1 .left{
+    padding:113px 31px 0px 15px;
+}
+
+.body-1 .left .link{
+    width: 89px;
+    height: 36px;
+    font-size: 16px;
+    border: 0px solid ;
+    border-radius: 15px;
+    background-color: #5A67D80D;
+    align-items: center;
+    
+}
+
+.body-1 .left h1{
+    font-size: 44px;
+    color: #2D3748;
+}
 .body-1 .left p{
+    font-size: 18px;
+    color: #718096;
     display: flex;
     flex-wrap: wrap;
 }
