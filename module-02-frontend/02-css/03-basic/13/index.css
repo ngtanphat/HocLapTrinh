@@ -6,7 +6,7 @@
 body{
     background-color: #F4F4F4;
     font-family: "Hind", sans-serif;
-    
+    color: #718096;
 }
 .header{
     background-color: #FFFFFF;
@@ -24,10 +24,16 @@ body{
 .newsblog{
     display: flex;
     font-weight: 600;
+    align-items: center;
 }
 .newsblog #icon{
+    color:#5A67D8;
     width: 28px;
     height: 28px;
+}
+
+.newsblog h1{
+    color: #2D3748;
 }
 
 .header .button{
@@ -35,6 +41,10 @@ body{
     gap:24px;
     font-size: 18px;
     font-weight: 500;
+}
+
+.header .inside .button .home{
+    color: #5A67D8;
 }
 .more{
     display: flex;
@@ -54,7 +64,7 @@ body{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
     gap:30px;
     width: 1320px;
@@ -71,10 +81,15 @@ body{
     margin-bottom: 72px;
 }
 
+.category .button i{
+    color:#5A67D8;
+}
+
 .body-1{
     width: 1320px;
     display: flex;
     margin: auto;
+    margin-bottom: 70px;
     /* flex-wrap: wrap; */
 }
 
@@ -85,12 +100,18 @@ body{
 .body-1 .left .link{
     width: 89px;
     height: 36px;
+    padding:auto;
     font-size: 16px;
+    font-weight: 600;
     border: 0px solid ;
     border-radius: 15px;
     background-color: #5A67D80D;
-    align-items: center;
-    
+    text-align: center;
+    line-height: 18px;
+}
+
+.body-1 .left .link p{
+    color:#5A67D8;
 }
 
 .body-1 .left h1{
@@ -111,4 +132,89 @@ body{
     border-radius: 15px;
     aspect-ratio: 410/510;
     object-fit: cover;
+}
+
+.body-2{
+    width: 1320px;
+    display: block;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.body-2 .title{
+    color: #2D3748;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: Libre Baskerville;
+    margin-bottom: 40px;
+}
+
+.body-2 .content, 
+.body-3 .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-2 .content-1{
+    width: calc(100%/3);
+    padding-bottom: 96px;
+}
+
+.body-3 {
+    width: 1320px;
+    display: block;
+    margin: auto;
+    background-color: #F8F9FA;
+}
+
+.body-3 .title{
+    display: flex;
+    justify-content:space-between;
+    color: #2D3748;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: Libre Baskerville;
+    margin-bottom: 40px;
+}
+
+.body-3 .title-btn{
+    width: 116px;
+    height: 38px;
+    border: 0px solid #E2E8F0;
+    border-radius: 15px;
+    color: #718096;
+}
+
+.body-3 .content-1{
+    width: calc(100%/3);
+    padding-bottom: 96px;
+}
+
+.body-4 {
+    width: 1320px;
+    display: block;
+    margin: auto;
+    background-color: #F8F9FA;
+}
+
+.body-4 .title{
+    display: flex;
+    justify-content:space-between;
+    color: #2D3748;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: Libre Baskerville;
+    margin-bottom: 40px;
+}
+.body-4 .title-btn{
+    width: 116px;
+    height: 38px;
+    border: 0px solid #E2E8F0;
+    border-radius: 15px;
+    color: #718096;
+}
+
+.body-4 .content-1{
+    width: calc(100%/2);
+    padding-bottom: 96px;
 }
