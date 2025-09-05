@@ -15,8 +15,6 @@ body{
 }
 .header .inside{
     font-size: 28px;
-    width: 1320px;
-    margin:auto;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -64,11 +62,9 @@ body{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    /* justify-content: center; */
     flex-wrap: wrap;
     gap:30px;
-    width: 1320px;
-    margin:auto;
+    padding: 22px 343px;
 }
 
 .category .button{
@@ -86,10 +82,11 @@ body{
 }
 
 .body-1{
-    width: 1320px;
+    /* width: 1320px; */
     display: flex;
     margin: auto;
     margin-bottom: 70px;
+    padding: 22px 343px;
     /* flex-wrap: wrap; */
 }
 
@@ -135,9 +132,10 @@ body{
 }
 
 .body-2{
-    width: 1320px;
+    /* width: 1320px; */
     display: block;
     margin: auto;
+    padding: 22px 343px;
     background-color: #FFFFFF;
 }
 
@@ -161,9 +159,10 @@ body{
 }
 
 .body-3 {
-    width: 1320px;
+    /* width: 1320px; */
     display: block;
     margin: auto;
+    padding: 22px 343px;
     background-color: #F8F9FA;
 }
 
@@ -191,9 +190,9 @@ body{
 }
 
 .body-4 {
-    width: 1320px;
+    /* width: 1320px; */
     display: block;
-    margin: auto;
+    padding: 95px 343px;
     background-color: #F8F9FA;
 }
 
@@ -214,7 +213,12 @@ body{
     color: #718096;
 }
 
-.body-4 .content-1{
-    width: calc(100%/2);
+.body-4 .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-4 .content .content-1{
+    width: 50%;
     padding-bottom: 96px;
 }
