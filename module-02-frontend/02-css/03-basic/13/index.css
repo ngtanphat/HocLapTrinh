@@ -222,3 +222,17 @@ body{
     width: 50%;
     padding-bottom: 96px;
 }
+
+.footer{
+    background-color: #FFFFFF;
+}
+
+.footer .inside{
+    display: flex;
+    padding: 64px 442px 69px 315px;
+    gap:30px
+}
+
+.footer .inside .title{
+    width: 410px;
+}
