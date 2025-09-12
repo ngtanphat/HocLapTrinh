@@ -193,14 +193,13 @@ body{
     background-color: #FFFFFF;
     border: 0px solid;
     border-radius: 15px;
+    max-width: 410px;
     width: calc(100%/3);
     padding-bottom: 96px;
 }
-.body-3 img{
-    display: block;
-    width: 100%;
-    /* aspect-ratio: 410/271; */
-    /* object-fit: cover; */
+.body-3 .content .content-1 img{
+    max-width: 410px;
+    object-fit: cover;
 }
 
 .body-3 .content .content-1 .content-1a{
@@ -242,4 +241,64 @@ body{
 .body-4 .content .content-1{
     width: 50%;
     padding-bottom: 96px;
+}
+
+.body-5 {
+    padding: 95px 48px;
+    background-color: #F8F9FA;
+}
+
+.body-5 .content{
+    display: flex;
+    gap:30px;
+}
+
+.body-5 .content .content-1{
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.body-6 {
+    background-color: #FFFF;
+    border: 0px solid;
+    border-radius: 15px;
+    margin: 96px 315px;
+    text-align: center;
+}
+
+.body-6 .content{
+    padding:96px 366px;
+}
+
+.body-6 .content-1 h2{
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    font-size: 26px;
+    color:#2D3748;
+    margin-bottom: 8px;
+}
+
+.body-6 .content-1 p{
+    font-family: Hind;
+    font-weight: 400;
+    font-size: 18px;
+    color:#718096;
+    margin-bottom: 48px;
+}
+
+.body-6 .content-2 input{
+    background-color: #F4F4F4;
+    width: 400px;
+    height: 50px;
+    border: 0px solid;
+    border-radius: 6px;
+}
+
+.body-6 .content-2 button{
+    background-color: #5A67D8;
+    width: 152px;
+    height: 50px;
+    border: 0px solid;
+    border-radius: 6px;
 }
