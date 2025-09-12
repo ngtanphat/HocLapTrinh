@@ -214,7 +214,7 @@ body{
 .body-4 {
     /* width: 1320px; */
     display: block;
-    padding: 95px 343px;
+    padding: 96px 315px;
     background-color: #F8F9FA;
 }
 
@@ -241,16 +241,29 @@ body{
 }
 
 .body-4 .content .content-1{
-    width: 50%;
+    width: calc(100%/2);
+    height: 278px;
     padding-bottom: 96px;
+    display: flex;
+    gap: 30px;
+    background-color: #FFFFFF;
+    border: 0px solid;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .body-4 .content .content-1 .left img{
-    /* max-width: 410px; */
+    /* max-width: 262px; */
+    display:block;
+    width:100%;
     aspect-ratio: 262/278;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.body-4 .content .content-1 .right{
+    padding: 67px 57px 67px 25px;
 }
 
 .body-5 {
