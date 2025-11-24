@@ -165,7 +165,9 @@ body {
     margin-left: 15px;
     margin-bottom: 40px;
 }
-
+.body-2 .inside .content .content1-img img{
+    width: 100%;
+}
 .body-2 .inside .content .content-1 h2 {
     font-weight: 700;
     font-family: Hind;
@@ -179,11 +181,11 @@ body {
 
 .body-2 .content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap:30px;
 }
 
-.body-2 .content-1 {
+
+.body-2 .inside .content .content-1{
     width: calc(100%/3);
 }
 
@@ -428,8 +430,8 @@ body {
     width: 400px;
     height: 50px;
     border: 0px solid;
-    border-radius: 16px;
-    padding: 15px 20px;
+    border-radius: 6px;
+    align-items: center;
 }
 
 .body-6 .content-2 button {
