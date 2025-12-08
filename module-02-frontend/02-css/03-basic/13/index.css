@@ -89,41 +89,115 @@ header {
   margin: auto;
   margin-bottom: 71px;
 }
-.hero-post{
-    display: flex;
-    gap:30px;
-    align-items: center;
+.hero-post {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
-.hero-post-info{
-    width: calc((100% - 30px) / 3 * 2);
+.hero-post-info {
+  width: calc((100% - 30px) / 3 * 2);
 }
-.hero-post-image{
-    width: calc((100% - 30px) / 3);
-    object-fit: cover;
-    aspect-ratio: 4/3;
+.hero-post-image {
+  width: calc((100% - 30px) / 3);
+  object-fit: cover;
+  aspect-ratio: 4/3;
 }
-.hero-post-category{
-    display: inline-block;
-    background-color: #5A67D80D;
-    border-radius: 15px;
-    padding: 5px 20px;
-    margin-bottom: 24px;
-    color: #5A67D8;
+.hero-post-category {
+  display: inline-block;
+  background-color: #5a67d80d;
+  border-radius: 15px;
+  padding: 5px 20px;
+  margin-bottom: 24px;
+  color: #5a67d8;
 }
-.hero-post-title{
-    color: #2D3748;
-    font-size: 45px;
-    font-family: Libre Baskerville;
+.hero-post-title {
+  color: #2d3748;
+  font-size: 45px;
+  font-family: Libre Baskerville;
 }
-.hero-post-description{
-    color: #718096;
-    font-size: 18px;
+.hero-post-description {
+  color: #718096;
+  font-size: 18px;
 }
 
+/* Fashion and style*/
 .fashion-section {
-  background-color: #f8f9fa;
+  background-color: #F8F9FA;
+  padding: 96px 0px;
 }
 
-.fashion-section .contaier {
-  
+.section-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.section-title {
+  color: #2d3748;
+  font-size: 26px;
+  font-family: Libre Baskerville;
+}
+.section-title-view-more {
+  background-color: #e2e8f0;
+  border: 0px solid;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #718096;
+  padding: 6px 20px;
+}
+
+.fashion-post-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.fashion-post-item {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  width: calc((100% - 90px) / 3);
+}
+.fashion-post-thumb{
+  margin-bottom: 25px;
+}
+.fashion-post-img{
+  width: 100%; /* nhờ a Linh giải thích*/
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.fashion-post-info{
+  margin: 25px;
+}
+.fashion-post-title{
+  font-family: Hind;
+  font-size: 22px;
+  color:#2D3748;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.fashion-post-meta-wrapper{
+  display: flex;
+  gap: 10px;
+}
+.fashion-post-author-avatar{
+  width: 58px;
+  height:58px;
+  border-radius: 50%;
+}
+.fashion-post-author-name{
+  font-family: Hind;
+  font-size: 18px;
+  color: #2D3748;
+}
+.fashion-post-published-date{
+  font-family: Hind;
+  font-size: 16px;
+  color: #718096;
+}
+/*Beauty*/
+.beauty-section{
+  background-color: #F4F4F4;
+}
+
+/*Trending Now*/
+.trending-section{
+  background-color: #F8F9FA;
 }
