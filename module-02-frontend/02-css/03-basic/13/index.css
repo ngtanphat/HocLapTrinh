@@ -195,8 +195,21 @@ header {
 /*Beauty*/
 .beauty-section{
   background-color: #F4F4F4;
+  padding: 96px 0px;
 }
-
+.beauty-post-list{
+  display:flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.beauty-post-item{
+  display: flex;
+  gap: 25px;
+  width: calc((100% - 30px) / 2 );
+}
+.beauty-post-img{
+  /* width: calc(100% - 25px); */
+}
 /*Trending Now*/
 .trending-section{
   background-color: #F8F9FA;
