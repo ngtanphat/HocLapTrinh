@@ -246,14 +246,14 @@ header {
   width: 40%;
 }
 
-.beauty-post-info{
+.beauty-post-info {
   width: 60%;
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.beauty-post-meta-wrapper{
+.beauty-post-meta-wrapper {
   display: flex;
 }
 .beauty-post-author-avatar {
@@ -263,47 +263,93 @@ header {
 }
 /*Trending Now*/
 .trending-section {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
 }
-.trending-container{
+.trending-container {
   padding: 96px 48px;
 }
-.trending-title{
+.trending-title {
   font-family: "Libre Baskerville";
   font-size: 26px;
   font-weight: 700;
-  color: #2D3748;
+  color: #2d3748;
   padding-bottom: 40px;
-  background-color: red;
+}
+.trending-post-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.trending-post-item{
+  background-color: #FFFFFF;
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  gap: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.trending-post-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-title-trending{
+  background-color: rgba(90, 103, 216, 0.05);
+  color: #5A67D8;
+  font-family: "Hind";
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+.trending-post-title{
+  font-family: "Hind";
+  font-size: 22px;
+  font-weight: 700;
+  color: #2D3748;
+  padding-bottom: 16px;
+}
+.trending-post-content{
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 400;
+  color: #718096;
+  padding-bottom: 16px;
+}
+.trending-post-author-avatar{
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.trending-post-meta-info{
+  
 }
 /* subcribe */
-.subcribe-box{
+.subcribe-box {
   margin: 96px 315px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.subcribe-title{
+.subcribe-title {
   margin-bottom: 8px;
   font-family: "Libre Baskerville";
   font-weight: 700;
   font-size: 26px;
-  color:#2D3748;
+  color: #2d3748;
 }
-.subcribe-description{
+.subcribe-description {
   margin-bottom: 48px;
   font-family: "Hind";
   font-weight: 400;
   font-size: 17px;
   color: #757575;
 }
-.subcribe-form{
+.subcribe-form {
   display: flex;
   gap: 4px;
-
 }
-.subcribe-email{
+.subcribe-email {
   width: 400px;
   padding: 15px 20px;
   border: 0px solid;
@@ -313,13 +359,13 @@ header {
   font-size: 18px;
   color: #718096;
 }
-.subcribe-button{
-  background-color: #5A67D8;
+.subcribe-button {
+  background-color: #5a67d8;
   padding: 15px 35px;
   font-family: "Hind";
   font-weight: 600;
   font-size: 17px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 0px solid;
   border-radius: 6px;
 }
