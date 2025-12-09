@@ -18,6 +18,11 @@ a {
   border-radius: 50%;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   background-color: #f4f4f4;
   font-family: "Hind", sans-serif;
@@ -119,10 +124,40 @@ header {
   color: #718096;
   font-size: 18px;
 }
-
+/* Top Pick */
+.top-pick-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.top-pick-item {
+  width: calc((100% - 60px) / 3);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.top-pick-image {
+}
+.top-pick-item-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.top-pick-item-author-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
 /* Fashion and style*/
 .fashion-section {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   padding: 96px 0px;
 }
 
@@ -131,14 +166,15 @@ header {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+
 .section-title {
   color: #2d3748;
   font-size: 26px;
-  font-family: Libre Baskerville;
+  font-family: "Libre Baskerville";
 }
+
 .section-title-view-more {
   background-color: #e2e8f0;
-  border: 0px solid;
   border-radius: 15px;
   font-size: 16px;
   color: #718096;
@@ -151,66 +187,139 @@ header {
   justify-content: space-evenly;
 }
 .fashion-post-item {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
-  width: calc((100% - 90px) / 3);
+  overflow: hidden; /*thay cho set border hinh anh*/
+  width: calc((100% - 60px) / 3);
 }
-.fashion-post-thumb{
+.fashion-post-thumb {
   margin-bottom: 25px;
 }
-.fashion-post-img{
-  width: 100%; /* nhờ a Linh giải thích*/
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+.fashion-post-img {
+  /* width: 100%; da set tren dau*/
 }
-.fashion-post-info{
-  margin: 25px;
+.fashion-post-info {
+  padding: 25px;
 }
-.fashion-post-title{
+.fashion-post-title {
   font-family: Hind;
   font-size: 22px;
-  color:#2D3748;
+  color: #2d3748;
   flex-wrap: wrap;
   margin-bottom: 16px;
 }
-.fashion-post-meta-wrapper{
+.fashion-post-meta-wrapper {
   display: flex;
   gap: 10px;
 }
-.fashion-post-author-avatar{
+.fashion-post-author-avatar {
   width: 58px;
-  height:58px;
+  height: 58px;
   border-radius: 50%;
 }
-.fashion-post-author-name{
+.fashion-post-author-name {
   font-family: Hind;
   font-size: 18px;
-  color: #2D3748;
+  color: #2d3748;
 }
-.fashion-post-published-date{
+.fashion-post-published-date {
   font-family: Hind;
   font-size: 16px;
   color: #718096;
 }
 /*Beauty*/
-.beauty-section{
-  background-color: #F4F4F4;
+.beauty-section {
+  background-color: #f4f4f4;
   padding: 96px 0px;
 }
-.beauty-post-list{
-  display:flex;
+.beauty-post-list {
+  display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
-.beauty-post-item{
+.beauty-post-item {
   display: flex;
-  gap: 25px;
-  width: calc((100% - 30px) / 2 );
+  width: calc((100% - 30px) / 2);
 }
-.beauty-post-img{
-  /* width: calc(100% - 25px); */
+
+.beauty-post-thumb {
+  width: 40%;
+}
+
+.beauty-post-info{
+  width: 60%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.beauty-post-meta-wrapper{
+  display: flex;
+}
+.beauty-post-author-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
 }
 /*Trending Now*/
-.trending-section{
+.trending-section {
   background-color: #F8F9FA;
+}
+.trending-container{
+  padding: 96px 48px;
+}
+.trending-title{
+  font-family: "Libre Baskerville";
+  font-size: 26px;
+  font-weight: 700;
+  color: #2D3748;
+  padding-bottom: 40px;
+  background-color: red;
+}
+/* subcribe */
+.subcribe-box{
+  margin: 96px 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subcribe-title{
+  margin-bottom: 8px;
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 26px;
+  color:#2D3748;
+}
+.subcribe-description{
+  margin-bottom: 48px;
+  font-family: "Hind";
+  font-weight: 400;
+  font-size: 17px;
+  color: #757575;
+}
+.subcribe-form{
+  display: flex;
+  gap: 4px;
+
+}
+.subcribe-email{
+  width: 400px;
+  padding: 15px 20px;
+  border: 0px solid;
+  border-radius: 6px;
+  font-family: "Hind";
+  font-weight: 400;
+  font-size: 18px;
+  color: #718096;
+}
+.subcribe-button{
+  background-color: #5A67D8;
+  padding: 15px 35px;
+  font-family: "Hind";
+  font-weight: 600;
+  font-size: 17px;
+  color: #FFFFFF;
+  border: 0px solid;
+  border-radius: 6px;
 }
