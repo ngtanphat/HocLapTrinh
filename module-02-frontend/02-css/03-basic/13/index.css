@@ -11,12 +11,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-* > .img-ava {
-  width: 58px;
-  height: 58px;
-  border: 0px solid;
-  border-radius: 50%;
-}
 
 img {
   max-width: 100%;
@@ -275,53 +269,68 @@ header {
   color: #2d3748;
   padding-bottom: 40px;
 }
-.trending-post-list{
+.trending-post-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.trending-post-item{
-  background-color: #FFFFFF;
+.trending-post-item {
+  background-color: #ffffff;
   width: calc((100% - 30px) / 2);
   display: flex;
   gap: 25px;
   border-radius: 15px;
   overflow: hidden;
 }
-.trending-post-info{
+.trending-post-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.section-title-trending{
+.section-title-trending {
   background-color: rgba(90, 103, 216, 0.05);
-  color: #5A67D8;
+  color: #5a67d8;
   font-family: "Hind";
   font-size: 16px;
   font-weight: 600;
-  
+  border-radius: 15px;
+  padding: 5px 20px;
+  margin-bottom: 16px;
 }
-.trending-post-title{
+.trending-post-title {
   font-family: "Hind";
   font-size: 22px;
   font-weight: 700;
-  color: #2D3748;
-  padding-bottom: 16px;
+  color: #2d3748;
+  margin-bottom: 16px;
 }
-.trending-post-content{
+.trending-post-content {
   font-family: "Hind";
   font-size: 18px;
   font-weight: 400;
   color: #718096;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
-.trending-post-author-avatar{
+.trending-post-author-avatar {
   width: 58px;
   height: 58px;
   border-radius: 50%;
 }
-.trending-post-meta-info{
-  
+.trending-post-meta-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.trending-post-author-name{
+  color: #2D3748;
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 500;
+}
+.trending-post-published-date{
+  color: #718096;
+  font-family: "Hind";
+  font-size: 16px;
+  font-weight: 400;
 }
 /* subcribe */
 .subcribe-box {
@@ -368,4 +377,68 @@ header {
   color: #ffffff;
   border: 0px solid;
   border-radius: 6px;
+}
+footer{
+  background-color: #FFFFFF;
+}
+.container-footer{
+  display: flex;
+  gap: 30px;
+  padding: 69px 0px;
+}
+.footer-title{
+  width: calc(100% / 3);
+}
+.footer-logo{
+  font-family: "Hind";
+  font-size: 28px;
+  font-weight: 600;
+  color: #2D3748;
+}
+.footer-logo-icon{
+  color: #5A67D8;
+}
+.footer-logo-year{
+  color:#718096;
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.design-by{
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer-content-list{
+  /* width: calc((100% * 2) / 3); */
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap
+}
+.footer-content-item{
+  /* width: calc((100% - 30px) / 3); */
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+}
+.footer-content-item-title{
+  color: #2D3748;
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer-content-item-list{
+  color: #718096;
+  font-family: "Hind";
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;;
+}
+.who{
+  color: #5A67D8;
 }
